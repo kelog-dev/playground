@@ -1,0 +1,12 @@
+Kwon Hyungjoo:
+  name: "Kwon Hyungjoo"
+  nickname: "LI-NA"
+  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "Tiny web developer. Actually not a student."
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/hyung778"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/LI-NA"
