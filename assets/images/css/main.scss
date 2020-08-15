@@ -4,12 +4,11 @@
 
 @charset "utf-8";
 
-$serif              : "Nanum Myeongjo", Georgia, Times, serif;
-$sans-serif-narrow  : "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$monospace          : "Nanum Gothic Coding", Monaco, Consolas, "Lucida Console", monospace;
+$serif: "Nanum Gothic", Georgia, Times, serif;
+$sans-serif: "Nanum Gothic", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$monospace: "Nanum Gothic Coding", Monaco, Consolas, "Lucida Console", monospace;
 
-$global-font-family : $serif;
-$header-font-family : $sans-serif-narrow;
+$x-large: 1600px;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
