@@ -1,7 +1,7 @@
 Kwon Hyungjoo:
   name: "Kwon Hyungjoo"
   nickname: "LI-NA"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/profiles/LI-NA.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "Tiny web developer. Actually not a student."
   links:
     - label: "Twitter"
