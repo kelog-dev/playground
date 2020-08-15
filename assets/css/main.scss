@@ -13,6 +13,12 @@ $x-large: 1600px;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+// 제목에 밑줄 제거
+.archive__item a {
+    text-decoration-line: none;
+}
+
+// 댓글 최대 넓이 확장
 .utterances {
     max-width: initial !important;
 }
