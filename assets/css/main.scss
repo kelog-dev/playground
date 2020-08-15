@@ -12,3 +12,7 @@ $x-large: 1600px;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.utterances {
+    max-width: initial !important;
+}
