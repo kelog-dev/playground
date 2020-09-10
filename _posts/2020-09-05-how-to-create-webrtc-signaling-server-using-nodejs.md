@@ -23,7 +23,7 @@ WebRTC를 사용하면서 가장 난해한 부분이 있었다. 바로 시그널
 
 이러한 정보들은 WebRTC를 연결하기 위해 필요한 정보들이며 크게 세션 기술 프로토콜(Session Description Protocol, SDP) 메시지와 대화형 연결 수립(Interactive Connectivity Establishment, ICE) 메시지 2가지로 나누어 사용한다. 먼저 SDP 메시지를 공유하여 서로의 환경을 알아낸 뒤, ICE 메시지를 공유하여 네트워크 연결 수립이 가능한 경로를 찾아서 수립하는 것이다.
 
-{% include figure image_path="/assets/images/posts/2020-09-05/webrtc-signaling-chart.svg" alt="WebRTC 연결이 수립되는 모습" %}
+{% include figure image_path="/assets/images/posts/2020-09-05/webrtc-signaling-chart.svg" alt="WebRTC 연결이 수립되는 모습" caption="WebRTC 연결이 수립되는 모습" %}
 
 이 구조를 [자바스크립트 세션 수립 프로토콜(JavaScript Session Establishment Protocol, JSEP)](http://tools.ietf.org/html/draft-ietf-rtcweb-jsep-03#section-1.1)이라고 한다.
 
@@ -31,7 +31,7 @@ WebRTC를 사용하면서 가장 난해한 부분이 있었다. 바로 시그널
 
 이제 본격적인 구현을 위해 어떻게 시그널링이 이루어지는지 자세히 살펴보도록 하자. WebRTC에서 다른 사용자와 연결을 하는데 사용하는 API가 바로 RTCPeerConnection이다. 이 API를 통해 SDP 세션 제안(SDP Session Description)을 생성하고 상대방의 SDP를 설정할 수 있다. 물론 ICE 후보(ICE Candidate) 또한 동일한 API를 통해 생성된다. 그 순서를 간단하게 설명하면 다음과 같다.
 
-{% include figure image_path="/assets/images/posts/2020-09-05/webrtc-signaling-sdp-chart.svg" alt="SDP를 교환하는 순서" %}
+{% include figure image_path="/assets/images/posts/2020-09-05/webrtc-signaling-sdp-chart.svg" alt="SDP를 교환하는 순서" caption="SDP를 교환하는 순서" %}
 
 이러한 과정을 거치면 두 사용자간의 local/remote sdp 정보가 일치하게된다. 비로소 WebRTC 연결을 시작할 준비가 끝난 것이다. 물론 SDP 정보와 별도로 ICE 후보를 통해 네트워크 정보를 교환해야 한다.
 
