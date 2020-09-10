@@ -8,7 +8,7 @@ toc: true
 toc_label: " 목차"
 toc_sticky: true
 ---
-# WebRTC 시그널링(Signaling) 서버 만들기
+## WebRTC 시그널링(Signaling) 서버 만들기
 
 WebRTC를 사용하면서 가장 난해한 부분이 있었다. 바로 시그널링(Signaling) 서버로, 딱히 정해진 내용이 없고 자유롭게 구현하면 된다고 하여 어떻게 시작하면 될지 막막했다. 이 글에서는 최대한 간결하게 요청 수락 / 거절이 있는 1:1 화상 통화를 위한 시그널링 서버를 NodeJS와 Socket.io로 구현해볼 것이다.
 
