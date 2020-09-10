@@ -22,3 +22,13 @@ $x-large: 1600px;
 .utterances {
     max-width: initial !important;
 }
+
+// figure center 지원
+figure.center {
+    flex-direction: column;
+    align-items: center;
+}
+
+figure.center img {
+    width: auto;
+}
