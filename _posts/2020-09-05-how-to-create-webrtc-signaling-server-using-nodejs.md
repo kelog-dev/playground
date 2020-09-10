@@ -3,7 +3,7 @@ title: "NodeJS로 WebRTC 시그널링(Signaling) 서버를 만드는 방법."
 author: "Kwon Hyungjoo"
 date: 2020-09-05 12:00:00 +0800
 categories: javascript
-tags: javascript, nodejs, webrtc, socketio
+tags: [javascript, nodejs, webrtc, socketio]
 toc: true
 toc_label: " 목차"
 toc_sticky: true
